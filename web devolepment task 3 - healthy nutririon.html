@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Bites</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #f7faf5;
+    }
+    header, footer { padding: 15px; text-align: center; background: #dcebd5; }
+    nav a {
+      margin: 8px;
+      color: #333;
+      text-decoration: none;
+    }
+    nav a:hover { text-decoration: underline; }
+    main {
+      width: 90%;
+      max-width: 850px;
+      margin: 20px auto;
+    }
+    h2 { color: #376341; }
+    .intro { text-align: center; }
+    .categories span {
+      display: inline-block;
+      background: #e7f1e2;
+      padding: 6px 10px;
+      margin: 4px;
+    }
+    .recipes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    .card {
+      background: white;
+      padding: 14px;
+      border: 1px solid #ddd;
+    }
+    .card h3 { margin-top: 5px; }
+    .calories { font-weight: bold; color: #376341; }
+    section { margin: 25px 0; }
+    @media (max-width: 600px) {
+      .recipes { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Healthy Bites</h1>
+    <nav>
+      <a href="#recipes">Recipes</a>
+      <a href="#meal-plan">Meal Plan</a>
+      <a href="#tips">Healthy Tips</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h2>Simple, healthy food ideas</h2>
+      <p>Easy recipes made with everyday ingredients.</p>
+    </div>
+    <section>
+      <h2>Food Categories</h2>
+      <div class="categories">
+        <span>Breakfast</span>
+        <span>Lunch</span>
+        <span>Snacks</span>
+        <span>Drinks</span>
+      </div>
+    </section>
+    <section id="recipes">
+      <h2>Nutritious Recipes</h2>
+      <div class="recipes">
+        <div class="card">
+          <h3>Fruit Oatmeal</h3>
+          <p>Ingredients: oats, milk, banana, and berries.</p>
+          <p>Mix oats with milk and add sliced fruit.</p>
+          <p class="calories">About 300 calories</p>
+        </div>
+        <div class="card">
+          <h3>Bean Salad</h3>
+          <p>Ingredients: beans, tomato, cucumber, and lemon.</p>
+          <p>Mix the ingredients and add lemon juice.</p>
+          <p class="calories">About 250 calories</p>
+        </div>
+        <div class="card">
+          <h3>Banana Smoothie</h3>
+          <p>Ingredients: banana, yogurt, and milk.</p>
+          <p>Blend all ingredients until smooth.</p>
+          <p class="calories">About 220 calories</p>
+        </div>
+      </div>
+    </section>
+    <section id="meal-plan">
+      <h2>One-Day Meal Plan</h2>
+      <p>Breakfast: Fruit oatmeal</p>
+      <p>Lunch: Bean salad with whole-grain bread</p>
+      <p>Snack: A piece of fruit</p>
+      <p>Dinner: Vegetables with rice and beans</p>
+    </section>
+    <section id="tips">
+      <h2>Healthy Eating Tips</h2>
+      <ul>
+        <li>Drink water during the day.</li>
+        <li>Add fruits and vegetables to your meals.</li>
+        <li>Enjoy a variety of foods.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Healthy Bites - Simple food, every day</p>
+    <p>Calories are approximate and depend on portions.</p>
+  </footer>
+</body>
+</html>
+
